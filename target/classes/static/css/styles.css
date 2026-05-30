@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #1e293b;
+}
+
+.main-container {
+    display: flex;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.sidebar {
+    width: 260px;
+    background: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #e2e8f0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff9d00;
+}
+
+.sidebar-footer{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ff9d00;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #64748b;
+    padding: 14px 16px;
+    border-radius: 14px;
+    transition: .3s ease;
+    font-weight: 500;
+}
+
+.menu a:hover,
+.menu a.active {
+    background: #ff9d00;
+    color: white;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.badge-role {
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.role-admin {
+    background: #dbeafe;
+    color: #ff9d00;
+}
+
+.role-vendedor {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.role-bodeguero {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.custom-modal {
+    border-radius: 24px;
+    border: none;
+}
+
+.custom-input {
+    border-radius: 14px;
+    padding: 12px;
+}
+
+
+
+@media(max-width: 992px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .content-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
