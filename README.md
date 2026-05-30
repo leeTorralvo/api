@@ -1,9 +1,9 @@
 # TiendaApp - Gestión de Usuarios con Arquitectura Hexagonal
-
+#Lee Daniel Torralvo
 ## Descripción del Proyecto
 
 TiendaApp es una aplicación web desarrollada con Spring Boot que implementa la Arquitectura Hexagonal (Ports and Adapters) para la gestión de usuarios dentro de una tienda.
-Lee Daniel Torralvo
+
 
 El sistema permite registrar usuarios y asignarles diferentes roles dentro de la organización:
 
